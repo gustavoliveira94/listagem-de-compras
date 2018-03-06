@@ -1,0 +1,35 @@
+.update{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.back {
+    width: 20%;
+    height: 70px;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.save {
+    width: 80%;
+    height: 70px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.save i {
+    margin-left: 10px;
+}

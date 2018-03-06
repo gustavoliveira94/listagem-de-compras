@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/stock.css">
+    <link rel="stylesheet" href="css/update.css">
+    <link rel="stylesheet" href="css/actions.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <header>
+
+        <template>
+            <div class="item">
+                <div class="description {{cssClass}}">
+                    <label>{{name}}
+                        <sup id="#minimun-stock">Min {{minimunStock}}</sup>
+                    </label>
+                    <span id="amount-stock">{{amountStock}}</span>
+                </div>
+
+                <div class="actions hidden">
+                    <a href="#" id="delete-item">
+                        <i class="fa-2x fas fa-trash-alt"></i>
+                    </a>
+                    <a href="#" id="minus-item">
+                        <i class="fa-2x fas fa-minus-circle"></i>
+                        </i>
+                    </a>
+                    <a href="#" id="plus-item">
+                        <i class="fa-2x fas fa-plus-circle"></i>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </template>
+
+        <div class="update hidden">
+            <a href="#" class="back">
+                <i class="fa-2x fas fa-chevron-left"></i>
+            </a>
+            <a href="#" class="save">
+                <p>Salve suas
+                    <br> Alterações
+                </p>
+                <i class="fa-2x far fa-caret-square-down"></i>
+            </a>
+        </div>
+
+        <div class="add">
+            <input type="text">
+            <a href="#" id="set">
+                <i class="fa-3x far fa-caret-square-down"></i>
+            </a>
+        </div>
+        <div class="stock hidden">
+            <p>Estoque
+                <br> Mínimo
+            </p>
+            <p class="number">1</p>
+            <a href="#" id="plus-stock">
+                <i class="fa-2x fas fa-plus-circle"></i>
+            </a>
+            <a href="#" id="minus-stock">
+                <i class="fa-2x fas fa-minus-circle"></i>
+            </a>
+        </div>
+
+        <ul id="list-item">
+
+        </ul>
+
+
+    </header>
+
+    <script src="js/utils.js"></script>
+    <script src="js/groceryinputitem.js"></script>
+    <script src="js/groceryitem.js"></script>
+    <script src="js/groceryupdatelist.js"></script>
+    <script src="js/grocerylist.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
