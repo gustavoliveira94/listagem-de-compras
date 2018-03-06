@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-li {
-    margin-top: -18px;
-}
+
 
 header {
     width: 100%;
@@ -20,6 +18,14 @@ header {
     display: none !important;
 }
 
-#list-item {
-    margin-top: -18px;
-}
+
+
+@supports (-ms-ime-align: auto) {
+    #list-item {
+        margin-top: -18px;
+    }
+
+    li {
+        margin-top: -18px;
+    }
+  }
